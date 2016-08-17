@@ -90,7 +90,8 @@ bool CFriendsUI::RemoveAt(int iIndex, bool bDoNotDestroy)
 void CFriendsUI::RemoveAll()
 {
 	CListUI::RemoveAll();
-	for (int i = 0; i < root_node_->num_children(); ++i)
+	int nCount = root_node_->num_children();
+	for (int i = 0; i < nCount; ++i)
 	{
 		Node* child = root_node_->child(i);
 		RemoveNode(child);
@@ -344,10 +345,10 @@ Node* CFriendsUI::AddNode(const FriendListItemInfo& item, Node* parent)
 bool CFriendsUI::RemoveNode(Node* node)
 {
 	if (!node || node == root_node_) return false;
-
-	for (int i = 0; i < node->num_children(); ++i)
+	int nCount = node->num_children();
+	for (int i = 0; i < nCount; ++i)
 	{
-		Node* child = node->child(i);
+		Node* child = node->child(0);
 		RemoveNode(child);
 	}
 

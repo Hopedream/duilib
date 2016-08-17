@@ -80,7 +80,7 @@ union DuiMessageMapFunctions
 
 #define DUI_MSGTYPE_SELECTCHANGED 		   (_T("selectchanged"))
 
-
+#define DUI_MSGTYPE_RICHEDIT_CONTEXT_MENU  (_T("richEditContextMenu"))
 //////////////////////////////////////////////////////////////////////////
 
 
@@ -244,6 +244,7 @@ protected:                                                                \
 #define  DUI_CTR_ACTIVEX                         (_T("ActiveX"))
 #define  DUI_CTR_GIFANIM                         (_T("GifAnim"))
 
+#define  DUI_CTR_LISTITEM                        (_T("ListItem"))
 #define  DUI_CTR_PROGRESS                        (_T("Progress"))
 #define  DUI_CTR_RICHEDIT                        (_T("RichEdit"))
 #define  DUI_CTR_CHECKBOX                        (_T("CheckBox"))

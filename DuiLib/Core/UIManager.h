@@ -30,6 +30,8 @@ typedef enum EVENTTYPE_UI
     UIEVENT_BUTTONDOWN,
     UIEVENT_BUTTONUP,
     UIEVENT_RBUTTONDOWN,
+	//jiapart
+	UIEVENT_RBUTTONUP,
     UIEVENT_DBLCLICK,
     UIEVENT_CONTEXTMENU,
     UIEVENT_SCROLLWHEEL,
@@ -396,6 +398,8 @@ public:
     bool MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT& lRes);
     bool PreMessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT& lRes);
 	void UsedVirtualWnd(bool bUsed);
+	//jiaparts
+	HDC getOffscreenDc();
 
 private:
 	CDuiPtrArray* GetFoundControls();

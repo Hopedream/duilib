@@ -3,6 +3,10 @@
 
 #pragma once
 
+#include <textserv.h>
+#include <richedit.h>
+#include <RichOle.h>
+
 namespace DuiLib {
 
 class CTxtWinHost;
@@ -129,6 +133,12 @@ public:
     void SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue);
 
     LRESULT MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, bool& bHandled);
+
+	ITextHost * GetTextHost();
+	ITextServices * GetTextServices();
+	BOOL SetOleCallback(IRichEditOleCallback* pCallback);
+	BOOL CanPaste(UINT nFormat = 0);
+	void PasteSpecial(UINT uClipFormat, DWORD dwAspect = 0, HMETAFILE hMF = 0);
 
 protected:
 	enum { 

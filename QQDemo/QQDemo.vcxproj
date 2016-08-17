@@ -85,8 +85,8 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">
-    <OutDir>$(SolutionDir)\bin\</OutDir>
-    <IntDir>.\Release_u\</IntDir>
+    <OutDir>D:\project\duilib\bin\</OutDir>
+    <IntDir>D:\project\duilib\bin\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -244,10 +244,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader />
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Release_u/QQDemo.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Release_u/</AssemblerListingLocation>
-      <ObjectFileName>.\Release_u/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release_u/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>D:\project\duilib\bin\QQDemo.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>D:\project\duilib\bin\</AssemblerListingLocation>
+      <ObjectFileName>D:\project\duilib\bin\</ObjectFileName>
+      <ProgramDataBaseFileName>D:\project\duilib\bin\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
@@ -256,9 +256,9 @@
       <Culture>0x0406</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>../bin/QQDemo_u.exe</OutputFile>
+      <OutputFile>D:\project\duilib\bin/QQDemo_u.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ProgramDatabaseFile>.\Release_u/QQDemo.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>D:\project\duilib\bin\QQDemo.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
